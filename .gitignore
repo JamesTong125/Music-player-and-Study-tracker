@@ -1,1 +1,3 @@
 /.venv
+/src/spotify_helper.py
+/.cache
