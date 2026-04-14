@@ -57,7 +57,7 @@ class VideoFrame(QLabel):
         self.setMinimumSize(0, 0)
         self.setSizePolicy(QSizePolicy.Policy.Expanding, QSizePolicy.Policy.Expanding)
         # Styling is handled by the app stylesheet; keep fallback in sync with theme.
-        self.setStyleSheet("background-color: #EED7CC; border-radius: 12px;")
+        self.setStyleSheet("background-color: #DCC4B8; border-radius: 12px;")
 
     def set_frame(self, qimg: QImage) -> None:
         self._qimg = qimg.copy()
@@ -567,28 +567,28 @@ class LauncherWindow(QMainWindow):
                 margin-top: 8px;
             }
             QFrame#card {
-                background-color: #EED7CC;
-                border: 1px solid #DCC4B8;
+                background-color: #DCC4B8;
+                border: 1px solid #C4A994;
                 border-radius: 22px;
                 padding: 18px 20px;
                 min-height: 152px;
             }
             QFrame#heroCard {
-                background-color: #EED7CC;
-                border: 1px solid #DCC4B8;
+                background-color: #DCC4B8;
+                border: 1px solid #C4A994;
                 border-radius: 26px;
                 min-height: 120px;
             }
             QFrame#camCard {
-                background-color: #EED7CC;
-                border: 1px solid #DCC4B8;
+                background-color: #DCC4B8;
+                border: 1px solid #C4A994;
                 border-radius: 22px;
                 padding: 18px 20px;
             }
             QLabel#badge {
-                background-color: #F4D2C6;
-                color: #7A3A2E;
-                border: 1px solid #E8B8A8;
+                background-color: #E8B8A8;
+                color: #5C2A22;
+                border: 1px solid #D49A88;
                 border-radius: 13px;
                 padding: 4px 10px;
                 font-size: 11px;
@@ -597,50 +597,50 @@ class LauncherWindow(QMainWindow):
             QLabel#cardTitle { color: #2A2524; font-size: 15px; font-weight: bold; }
             QLabel#cardDesc { color: #5C524C; font-size: 12px; margin-top: 2px; }
             QPushButton#runBtn {
-                background-color: #FF6B6B;
+                background-color: #E85A5A;
                 color: #ffffff;
-                border: 1px solid #E85A5A;
+                border: 1px solid #D94E4E;
                 border-radius: 14px;
                 font-size: 13px;
                 font-weight: bold;
                 padding: 10px 16px;
             }
-            QPushButton#runBtn:hover { background-color: #FF7B7B; border-color: #F06666; }
-            QPushButton#runBtn:pressed { background-color: #F55D5D; border-color: #D94E4E; }
-            QPushButton#runBtn:disabled { background-color: #E6CFC4; color: #8A7E78; border-color: #D8BFB4; }
+            QPushButton#runBtn:hover { background-color: #F06666; border-color: #E85A5A; }
+            QPushButton#runBtn:pressed { background-color: #D94E4E; border-color: #C94A4A; }
+            QPushButton#runBtn:disabled { background-color: #E8B0B0; color: #7A6A6A; border-color: #D8A0A0; }
             QPushButton#stopBtn {
-                background-color: #E6CFC4;
+                background-color: #D8BFB4;
                 color: #3A332F;
-                border: 1px solid #D8BFB4;
+                border: 1px solid #C9AEA2;
                 border-radius: 14px;
                 font-size: 13px;
                 font-weight: bold;
                 padding: 10px 16px;
             }
-            QPushButton#stopBtn:hover { background-color: #D8BFB4; border-color: #C9AEA2; }
-            QPushButton#stopBtn:pressed { background-color: #C9AEA2; border-color: #B89E92; }
+            QPushButton#stopBtn:hover { background-color: #C9AEA2; border-color: #B89E92; }
+            QPushButton#stopBtn:pressed { background-color: #B89E92; border-color: #A88E82; }
             QPushButton#stopBtn:disabled { background-color: #DDD5CF; color: #8A807A; border-color: #CFC4BC; }
             QComboBox {
-                background-color: #E6CFC4;
+                background-color: #DCC4B8;
                 color: #2E2A2A;
-                border: 1px solid #D8BFB4;
+                border: 1px solid #C4A994;
                 border-radius: 14px;
                 padding: 8px 12px;
                 min-width: 80px;
             }
             QComboBox::drop-down { border: 0px; width: 28px; }
             QComboBox QAbstractItemView {
-                background-color: #E6CFC4;
-                selection-background-color: #D8BFB4;
+                background-color: #DCC4B8;
+                selection-background-color: #C4A994;
                 selection-color: #2E2A2A;
-                border: 1px solid #D8BFB4;
+                border: 1px solid #C4A994;
                 border-radius: 12px;
                 padding: 6px;
             }
             QTextEdit {
-                background-color: #E6CFC4;
+                background-color: #DCC4B8;
                 color: #3A3432;
-                border: 1px solid #D8BFB4;
+                border: 1px solid #C4A994;
                 border-radius: 18px;
                 padding: 10px;
                 font-family: "Comic Sans MS", "Comic Sans", "Chalkboard SE", "Segoe Print", cursive;
@@ -652,8 +652,8 @@ class LauncherWindow(QMainWindow):
                 font-size: 10px;
             }
             QLabel#videoFrame {
-                background-color: #EED7CC;
-                border: 1px solid #DCC4B8;
+                background-color: #DCC4B8;
+                border: 1px solid #C4A994;
                 border-radius: 12px;
             }
             """
